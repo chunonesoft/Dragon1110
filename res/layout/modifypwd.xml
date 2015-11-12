@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_bgcopy" >
+ 	
+    <com.dlam.ui.TitleLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"></com.dlam.ui.TitleLayout>
+	
+	<ImageView 
+	    android:id="@+id/iv_set_2nd_modifypwd_box"
+	    android:layout_width="match_parent"
+	    android:layout_height="141dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/set_2nd_modifypwd_box"
+	    android:layout_below="@+id/iv_set_2nd_modifypwd"
+	    android:padding="0dp"
+	    android:layout_marginTop="100dp"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_set_2nd_oldpwd"
+	    android:layout_width="62dp"
+	    android:layout_height="15dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/set_2nd_oldpwd"
+	    android:layout_alignTop="@+id/iv_set_2nd_modifypwd_box"
+	    android:layout_marginTop="16dp"
+	    android:layout_marginLeft="16dp"/>
+	<EditText
+	    android:id="@+id/tv_set_2nd_input_oldpwd"
+	    android:layout_width="200dp"
+	    android:layout_height="20dp"
+	    android:hint="请输入旧密码"
+	    android:background="@null"
+	    android:layout_alignTop="@+id/iv_set_2nd_oldpwd"
+	    android:textColorHint="#CBCBCB"
+	    android:layout_toRightOf="@+id/iv_set_2nd_oldpwd"
+	    android:layout_marginLeft="10dp"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_set_2nd_newpwd"
+	    android:layout_width="62dp"
+	    android:layout_height="15dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/set_2nd_newpwd"
+	    android:layout_below="@+id/iv_set_2nd_oldpwd"
+	    android:layout_marginTop="28dp"
+	    android:layout_marginLeft="16dp"/>
+	<EditText 
+	    android:id="@+id/tv_set_2nd_input_newpwd"
+	    android:layout_width="200dp"
+	    android:layout_height="20dp"
+	    android:hint="密码6-12位"
+	    android:background="@null"
+	    android:layout_alignTop="@+id/iv_set_2nd_newpwd"
+	    android:textColorHint="#CBCBCB"
+	    android:layout_toRightOf="@+id/iv_set_2nd_newpwd"
+	    android:layout_marginLeft="10dp"/>
+	
+	<ImageView 
+	    android:id="@+id/iv_set_2nd_pwd_twice"
+	    android:layout_width="62dp"
+	    android:layout_height="15dp"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/set_2nd_input_oldpwd_twice"
+	    android:layout_below="@+id/iv_set_2nd_newpwd"
+	    android:layout_marginTop="34dp"
+	    android:layout_marginLeft="16dp"/>
+	<EditText 
+	    android:id="@+id/tv_set_2nd_input_twice_pl"
+	    android:layout_width="200dp"
+	    android:layout_height="20dp"
+	    android:background="@null"
+	    android:hint="请重复密码"
+	    android:layout_alignTop="@+id/iv_set_2nd_pwd_twice"
+	    android:textColorHint="#CBCBCB"
+	    android:layout_toRightOf="@+id/iv_set_2nd_pwd_twice"
+	    android:layout_marginLeft="10dp"/>
+    
+</RelativeLayout>

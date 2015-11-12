@@ -1,0 +1,209 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dlam.dragon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="12"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />      
+ 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+ 	<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+ 	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" /> 
+    
+ 
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    
+    
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.easemob.chatuidemo.permission.C2D_MESSAGE" />
+    
+    
+    <application
+        android:name="com.dlam.activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="com.dlam.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.dlam.activity.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.dlam.activity.LoginActivity"   
+            android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+        <activity android:name="com.dlam.activity.SplashActivity"></activity>
+        <activity android:name="com.dlam.activity.RegisterActivity"></activity>
+        <activity android:name="com.dlam.activity.T1Activity"></activity>
+        <activity android:name="com.dlam.activity.T2Activity"></activity>
+        <activity android:name="com.dlam.activity.T3Activity"></activity>
+        <activity android:name="com.dlam.activity.T4Activity"></activity>
+        <activity android:name="com.dlam.activity.EmptyActivity"></activity>
+        <activity android:name="com.dlam.activity.A_Search"></activity>
+        <activity android:name="com.dlam.activity.D_T1Activity"></activity>
+        <activity android:name="com.dlam.activity.D_T2Activity"></activity>
+        <activity android:name="com.dlam.activity.D_T3Activity"></activity>
+        <activity android:name="com.dlam.activity.D_SetActivity"></activity>
+        <activity android:name="com.dlam.activity.D_CompleteActivity"></activity>
+        <activity android:name="com.dlam.activity.A_NewsDetailActivity"></activity>
+        <activity android:name="com.dlam.activity.A_ActivityDetailActivity"></activity>
+        <activity android:name="com.dlam.activity.A_ServiceDetailActivity"></activity>
+        <activity android:name="com.dlam.activity.QQconstactActivity"></activity>
+        <activity android:name="com.dlam.activity.ErcodeScanActivity"></activity>
+        <activity android:name="com.dlam.activity.WaterCameraActivity"></activity>
+        <activity android:name="com.dlam.activity.WaterPhotoActivity"></activity>
+        <activity android:name="com.dlam.activity.WiFiActivity"></activity>
+        <activity android:name="com.dlam.activity.ChatActivity"></activity>
+        <activity android:name="com.dlam.activity.AddFriendActivity"></activity>
+        <activity android:name="com.dlam.activity.ImgPageActivity"></activity>
+        <activity android:name="com.dlam.activity.D_Set_ModifyPwd"></activity>
+        <activity android:name="com.dlam.activity.D_Set_Seedback"></activity>
+        <activity android:name="com.dlam.activity.D_MoreRecentView"></activity>
+        <activity android:name="com.dlam.activity.A_CommentNews"></activity>
+        <activity android:name="com.dlam.activity.WjmmActivity"></activity>
+        <activity android:name="com.dlam.activity.PersonPageActivity"></activity>
+       	<activity  android:name="com.dlam.activity.BaseActivity"></activity>
+       	<activity android:name="com.dlam.activity.VideoCallActivity"></activity>
+       	<activity android:name="com.dlam.activity.VoiceCallActivity"></activity>
+       	<activity android:name="com.dlam.activity.ImageGridActivity"></activity>
+       	<activity android:name="com.dlam.activity.BaiduMapActivity"></activity>
+       	<activity android:name="com.dlam.activity.RecorderVideoActivity"></activity>
+       	<activity android:name="com.dlam.activity.ShowBigImage"></activity>
+       	<activity android:name="com.dlam.activity.ForwardMessageActivity"></activity>
+       	<activity android:name="com.dlam.activity.ChatRoomDetailsActivity"></activity>
+       	<activity android:name="com.dlam.activity.GroupDetailsActivity"></activity>
+       	<activity android:name="com.dlam.activity.RobotsActivity"></activity>
+       	<activity android:name="com.dlam.activity.AddContactActivity"></activity>
+       	<activity android:name="com.dlam.activity.NewFriendsMsgActivity"></activity>
+       	<activity android:name="com.dlam.activity.NewGroupActivity"></activity>
+       	<activity android:name="com.dlam.activity.PublicChatRoomsActivity"></activity>
+       	<activity android:name="com.dlam.activity.PublicGroupsActivity"></activity>
+       	<activity android:name="com.dlam.activity.PublicGroupsSeachActivity"></activity>
+       	<activity android:name="com.dlam.activity.GroupsActivity"></activity>
+       	<activity android:name="com.dlam.activity.GroupBlacklistActivity"></activity>
+       	<activity android:name="com.dlam.activity.ShowVideoActivity"></activity>
+       	<activity android:name="com.dlam.activity.GroupSimpleDetailActivity"></activity>
+       	<!-- 自定义的contextmenu -->
+        <activity
+            android:name="com.dlam.activity.ContextMenu"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+        <!-- 自定义的alertdialog -->
+        <activity
+            android:name="com.dlam.activity.AlertDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" >
+        </activity>
+       	
+       	
+       	
+
+       	
+        <!-- 开机自启动服务 -->
+        <receiver android:name="com.easemob.chat.StartServiceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        
+        <!-- gcm start -->
+        <receiver
+            android:name="com.easemob.chat.EMGCMBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.easemob.chatuidemo" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.easemob.chat.EMGCMListenerService"
+            android:exported="false" >
+        </service>
+        
+        <receiver 
+            android:name="com.easemob.chatuidemo.receiver.GCMPushBroadCast"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="com.easemob.sdk.push"/>
+                <category android:name="com.easemob.chatuidemo"/>
+            </intent-filter>
+        </receiver>
+        <!-- gcm end -->
+
+        
+        <!-- 设置环信应用的appkey -->
+        <!-- <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="dlam#dragon" /> -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="easemob-demo#chatdemoui" />
+        <!-- 声明sdk所需的service -->
+        <service android:name="com.easemob.chat.EMChatService" />
+        
+         <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f" 
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- umeng appkey，可忽略 -->
+         <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="53912a3156240b01a7075ed1" >
+        </meta-data>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3ecea51f560650b1ed8a4b99808f52e8" />
+    </application>
+
+</manifest>

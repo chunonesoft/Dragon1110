@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_user" 
+        android:layout_marginLeft="10dip"
+        />
+    <TextView 
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+         android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#ff0000"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_marginLeft="10dip"
+        />
+    <ImageButton
+        android:id="@+id/iv_zan"
+        android:background="@drawable/a_thumbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_name" 
+        android:layout_marginLeft="30dip"
+        />
+    <TextView 
+        android:id="@+id/tv_zannum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/iv_zan"
+        />
+    <TextView 
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015-09-01 15:00:00"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@id/tv_name"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_marginLeft="10dip"
+        />
+    <TextView 
+        android:id="@+id/tv_content"
+        android:layout_below="@id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ContentA"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_marginLeft="10dip"
+        />
+
+</RelativeLayout>

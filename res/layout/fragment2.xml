@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+        <include layout="@layout/fragment2_title"
+             />
+</RelativeLayout>  
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_below="@id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="45dip" 
+        android:orientation="horizontal"
+        android:background="@drawable/titlebg"
+        >
+        <Spinner
+            android:id="@+id/sp_1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:entries="@array/cities"
+            android:prompt="@string/spin_cities"
+            android:spinnerMode="dialog"
+            ></Spinner>
+        <Spinner
+            android:id="@+id/sp_2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:entries="@array/needs"
+            android:prompt="@string/spin_need"
+            android:spinnerMode="dialog"
+            ></Spinner>
+        <Spinner
+            android:id="@+id/sp_3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:entries="@array/states"
+            android:prompt="@string/spin_state"
+            android:spinnerMode="dialog"
+            ></Spinner>
+        <Spinner
+            android:id="@+id/sp_4"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1" 
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:entries="@array/locates"
+            android:prompt="@string/spin_locate"
+            android:spinnerMode="dialog"
+            android:layout_marginRight="10dip"
+            ></Spinner>
+    </LinearLayout>
+<com.dlam.pullrefresh.PullToRefreshListView 
+    android:id="@+id/lv_b"
+    android:background="#fff"
+    android:layout_below="@+id/ll_2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+</com.dlam.pullrefresh.PullToRefreshListView>
+  
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    <com.dlam.ui.TitleLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    </com.dlam.ui.TitleLayout>
+	
+	<ImageView 
+	    android:id="@+id/iv_set_2nd_inputbox"
+	    android:layout_width="wrap_content"
+	    android:layout_height="190dp"
+	    android:src="@drawable/set_2nd_inputbox"
+	    android:layout_marginTop="130dp"
+	    android:scaleType="centerCrop"
+	    />
+	
+	<EditText 
+	    android:id="@+id/et_set_2nd_inputbox"
+	    android:layout_width="fill_parent"
+	    android:layout_height="190dp"
+	    android:textCursorDrawable="@drawable/set_2nd_cursor"
+	    android:layout_alignTop="@+id/iv_set_2nd_inputbox"
+	    android:hint="写下您的评论吧"
+	    android:gravity="top"
+	    android:textColorHint="#CBCBCB"
+	    android:background="@null"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    />
+    
+</RelativeLayout>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true"><!-- 按压状态 -->
+        <shape >
+            <!-- <stroke android:color="@color/blue" android:width="1dp"/> 描绘视图边边框-->
+            <solid android:color="@color/theme_color1"/>
+            <corners android:topLeftRadius="3dp" android:bottomLeftRadius="3dp" android:topRightRadius="0dp" android:bottomRightRadius="0dp"/>
+        </shape> 
+    </item>
+    <item>
+        <shape >
+            <!-- <stroke android:color="#0079FF" android:width="1dp"/> 描绘视图边框-->
+            <solid android:color="@color/white"/>
+            <corners android:topLeftRadius="3dp" android:bottomLeftRadius="3dp" android:topRightRadius="0dp" android:bottomRightRadius="0dp"/>
+        </shape>
+    </item>
+</selector>

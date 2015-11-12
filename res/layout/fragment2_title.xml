@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip"
+    android:orientation="horizontal" 
+    android:background="@drawable/titlebg">
+    
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_vertical|center_horizontal" 
+        android:layout_centerInParent="true"
+        android:text="人脉"
+        android:textColor="#FFF"
+        android:background="@null"
+       	android:ellipsize="end"
+       	android:textSize="@dimen/title_textsize"
+        />
+   <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dip"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/search" />
+
+</RelativeLayout>

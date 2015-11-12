@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="200dip"
+        android:background="@drawable/d_back" >
+
+      <ImageButton
+          android:id="@+id/ib_set" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/d_set"
+          android:layout_marginTop="20dip"
+          android:layout_marginLeft="20dip"
+          />
+      <ImageButton
+          android:id="@+id/ib_change" 
+          android:layout_alignBottom="@id/ib_set"
+          android:layout_alignParentRight="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/d_change"
+          android:layout_marginTop="20dip"
+          android:layout_marginRight="20dip"
+          />
+      <com.dlam.ui.RoundImageView
+          android:id="@+id/ib_user" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/d_user"
+          android:layout_below="@id/ib_set"
+          android:layout_marginTop="10dip"
+          android:layout_marginLeft="20dip"
+          />
+      <TextView
+          android:id="@+id/tv_name"
+          android:text="姓名 职业" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignTop="@id/ib_user"
+          android:layout_toRightOf="@id/ib_user"
+          android:textSize="16dip"
+          android:singleLine="true"
+          android:layout_marginLeft="10dip"
+          android:textColor="#fff"
+          />
+      <TextView
+          android:id="@+id/tv_mix"
+          android:text="地区 年龄" 
+          android:singleLine="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/ib_user"
+          android:layout_below="@id/tv_name"
+          android:textSize="14dip"
+          android:layout_marginLeft="10dip"
+          android:textColor="#fff"
+          />
+      <TextView
+          android:id="@+id/tv_state"
+          android:text="状态 性别" 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/ib_user"
+          android:layout_below="@id/tv_mix"
+          android:textSize="14dip"
+          android:singleLine="true"
+          android:layout_marginLeft="10dip"
+          android:textColor="#fff"
+          />
+      <TextView
+          android:id="@+id/tv_need"
+          android:text="需求" 
+          android:layout_marginLeft="10dip"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/ib_user"
+          android:layout_below="@id/tv_state"
+          android:textSize="14dip"
+          android:textColor="#fff"
+          />
+    </RelativeLayout>
+    <TabHost
+    android:id="@+id/tabhost"
+    android:layout_below="@id/rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TabWidget
+            android:id="@android:id/tabs" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dip"
+             >
+        </TabWidget>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- 将tabhost的tabcontent隐藏，用viewPage填充 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>
+</RelativeLayout>

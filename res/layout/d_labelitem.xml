@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:id="@+id/iv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/d_label" 
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        />
+    <TextView
+        android:id="@+id/tv_label" 
+        android:text="标签"
+        android:layout_toRightOf="@id/iv_label"
+        android:layout_alignTop="@id/iv_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/gray"
+        android:layout_alignBottom="@id/iv_label"
+        android:layout_marginLeft="5dip"
+        />
+</RelativeLayout>

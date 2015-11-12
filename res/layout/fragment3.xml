@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/titlebg" 
+        >
+    <com.dlam.ui.SegmentControlView
+        android:id="@+id/SegmentControlView"
+        android:layout_width="240dip"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/seg_linear"
+        android:padding="0.5dp" >
+    </com.dlam.ui.SegmentControlView>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragmentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rl_title" >
+    </FrameLayout>
+</RelativeLayout>

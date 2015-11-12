@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/titlebg"
+   >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center|center_horizontal"
+        android:lines="1"
+        android:paddingLeft="5dp"
+        android:text="蓝胖子"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/top_title_font_size"
+        android:textStyle="bold" />
+
+		<ImageView
+		    android:id="@+id/iv_refresh"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/tv_title"
+		   	android:layout_centerInParent="true"
+		    android:background="@drawable/refresh"
+		    />
+        
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dip"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/search" />
+
+
+</RelativeLayout>
